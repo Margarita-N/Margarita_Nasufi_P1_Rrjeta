@@ -1,4 +1,5 @@
 import array
+import datetime
 
 def count(teksti):
     teksti=teksti.lower()
@@ -25,6 +26,7 @@ def reverse(teksti):
     
     return r_string.strip()
 
+
 def palindrome(teksti):
     teksti=teksti.lower()
     r_teksti=reverse(teksti).lower()
@@ -33,3 +35,13 @@ def palindrome(teksti):
         return True
     else:
         return False
+
+
+def time():
+    koha_obj=datetime.datetime.now()
+
+    koha=str(koha_obj.hour)+":"+str(koha_obj.minute)+":"+str(koha_obj.second)
+
+    return 'Koha e serverit eshte:'+koha
+
+
