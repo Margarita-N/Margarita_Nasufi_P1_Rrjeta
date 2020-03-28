@@ -70,7 +70,7 @@ def GCF(number1,number2):
             break
         smaller_number-=1
     
-    return gcf
+    return print(f'GCF per numrat {number1} dhe {number2} eshte:{gcf}')
 
 def convert_cmToFeet(number):
     shndrrimi=round(number/30.48,3)
