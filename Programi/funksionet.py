@@ -1,4 +1,7 @@
+import array
+
 def count(teksti):
+    teksti=teksti.lower()
     shkronjat_zanore=('a','e','i','o','u','y')
     shkronjat_bashketingellore=('b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z')
 
@@ -15,3 +18,18 @@ def count(teksti):
     rezultati='Numri i zanoreve eshte:'+str(zanoret)+'\nNumri i bashketingelloreve eshte:'+str(bashketingelloret)
 
     return rezultati
+
+
+def reverse(teksti):
+    r_string=teksti[len(teksti)::-1]
+    
+    return r_string.strip()
+
+def palindrome(teksti):
+    teksti=teksti.lower()
+    r_teksti=reverse(teksti).lower()
+
+    if(teksti==r_teksti):
+        return True
+    else:
+        return False
