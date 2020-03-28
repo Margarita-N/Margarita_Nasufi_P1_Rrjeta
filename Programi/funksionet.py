@@ -56,3 +56,18 @@ def game():
 
     return lista_numrat
 
+
+def GCF(number1,number2):
+    smaller_number=number1
+    if number1<number2: smaller_number=number1
+    elif number2<number1:smaller_number=number2
+
+    gcf=1
+
+    while smaller_number>0:
+        if number1%smaller_number==0 and number2%smaller_number==0:
+            gcf=smaller_number
+            break
+        smaller_number-=1
+    
+    return gcf
