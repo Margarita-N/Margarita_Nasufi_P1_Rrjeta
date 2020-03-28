@@ -71,3 +71,23 @@ def GCF(number1,number2):
         smaller_number-=1
     
     return gcf
+
+def convert_cmToFeet(number):
+    shndrrimi=round(number/30.48,3)
+    return print(f'Shndrrimi i {number} centimetrave ne feet eshte:{shndrrimi}')
+
+def convert_feetToCm(number):
+    shndrrimi=round(number*30.48,3)
+    return print(f'Shndrrimi i {number} feet ne centimetrave eshte:{shndrrimi}')
+
+def convert_kmToMiles(number):
+    shndrrimi=round()
+    return
+
+def convert_kmToMiles(number):
+    shndrrimi=round(number/1.609,2)
+    return print(f'Shndrrimi i {number} kilmetrave ne miles eshte:{shndrrimi}')
+
+def convert_milesToKm(number):
+    shndrrimi=round(number*1.609,2)
+    return print(f'Shndrrimi i {number} miles ne kilometra eshte:{shndrrimi}')
