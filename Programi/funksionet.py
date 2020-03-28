@@ -1,5 +1,6 @@
 import array
 import datetime
+from random import random
 
 def count(teksti):
     teksti=teksti.lower()
@@ -44,4 +45,14 @@ def time():
 
     return 'Koha e serverit eshte:'+koha
 
+def game():
+    lista_numrat=[]
+    random_number=0
+    nr_count=0
+    while nr_count<5:
+        random_number=int((random()*35)+1)
+        lista_numrat.append(random_number)
+        nr_count+=1
+
+    return lista_numrat
 
